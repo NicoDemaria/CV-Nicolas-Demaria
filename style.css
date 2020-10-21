@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(3,1fr);
+    grid-template-rows: repeat(4, auto );
+    grid-template-areas: "header header header"
+                        "contenido contenido sidebar"
+                        "widget-1 widget-2 sidebar"
+                        "footer footer footer";
+                        
+}
+
+.contenedor .header {
+    grid-area: header;
+    background-color:#EAE4E9;
+    color: black;
+    padding: 20px;
+    border-radius: 4px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.contenedor .contenido {
+    grid-area: contenido;
+    background-color: #FDFFFC;
+    padding: 20px;
+    color:black;
+    border:1px solid;
+    border-radius: 4px;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+.contenedor  .sidebar {
+    grid-area: sidebar;
+    background-color: #FFF1E6;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    height: auto;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.contenedor  .widget-1 {
+    grid-area: widget-1;
+    background-color: #FDE2E4;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.contenedor .widget-2  {
+    grid-area: widget-2;
+    background-color: #FAD2E1;
+    padding: 20px;
+    color:white;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+.contenedor  .footer {
+    grid-area: footer;
+    background-color: #E2ECE9;
+    padding: 20px;
+    color: black;
+    border-radius: 4px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-areas: "header header header"
+                        "contenido contenido contenido"
+                        "widget-1 widget-1 widget-1"
+                        "widget-2  widget-2 widget-2"
+                        "sidebar sidebar sidebar"
+                        "footer footer footer";
+    }
+}
+
+.contenedor  .sidebar .proyectos {
+    text-align: justify;
+    margin-left: 15px;
+    text-decoration: none;
+    color:white;
+    padding-top: 20px;
+}
