@@ -1,9 +1,5 @@
 # CV
 
-Page made with CSS GRID. With vsCode.
-![myimage-alt-tag](https://snipboard.io/DtXCQe.jpg)
-
-Second page
-![myimage-alt-tag](https://snipboard.io/qwoSfm.jpg)
+You can visit the web site with the following link => https://nicodemaria.github.io/CV-Nicolas-Demaria/
 
 
